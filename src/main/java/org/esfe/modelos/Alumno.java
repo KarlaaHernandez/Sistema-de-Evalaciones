@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -16,4 +18,6 @@ public class Alumno {
     private String codigo;
     private String carrera;
     private  String grupo;
+    @OneToMany(mappedBy = "alumno")
+    private List<Servicio> servicios;
 }
