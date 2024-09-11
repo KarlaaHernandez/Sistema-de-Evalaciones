@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -20,6 +22,8 @@ public class Servicio {
     @ManyToOne
     @JoinColumn(name = "alumno_id")
     private Alumno alumno;
+    @OneToMany(mappedBy = "servicio")
+    private List<Evaluacion> evaluaciones;
 
 
     public void setId(Object o) {

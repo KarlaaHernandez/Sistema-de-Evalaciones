@@ -20,4 +20,6 @@ public class Alumno {
     private  String grupo;
     @OneToMany(mappedBy = "alumno")
     private List<Servicio> servicios;
+    @OneToMany(mappedBy = "alumno")
+    private List<Evaluacion> evaluaciones;
 }

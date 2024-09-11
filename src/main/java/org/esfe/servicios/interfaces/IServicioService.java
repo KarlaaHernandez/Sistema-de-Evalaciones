@@ -12,8 +12,6 @@ import java.util.List;
 public interface IServicioService {
     List<ServicioSalida> obtenerTodos();
 
-
-
     Page<ServicioSalida> obtenerTodosPaginados(Pageable pageable);
 
     ServicioSalida obtenerPorId(Integer id);

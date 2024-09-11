@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Getter
 @Setter
 
@@ -16,7 +18,9 @@ public class Criterio {
 
     private String nombre;
 
-//    @ManyToOne
-//    JoinColumn(name = "servicio_id")
-//    private Servicio servicio;
+   @ManyToOne
+   @JoinColumn(name = "servicio_id")
+   private Servicio servicio;
+   @ManyToMany(mappedBy = "criterios")
+   private Set<Evaluacion> evaluaciones;
 }
