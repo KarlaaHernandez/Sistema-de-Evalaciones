@@ -14,10 +14,8 @@ public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String biblioteca;
-    private String  cafeteria;
-    private String registroAcademico;
-    private  String atencionAlCliente;
+    private String nombre;
+
 
     @ManyToOne
     @JoinColumn(name = "alumno_id")

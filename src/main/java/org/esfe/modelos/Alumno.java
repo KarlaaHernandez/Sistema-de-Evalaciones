@@ -18,8 +18,7 @@ public class Alumno {
     private String codigo;
     private String carrera;
     private  String grupo;
-    @OneToMany(mappedBy = "alumno")
-    private List<Servicio> servicios;
+
     @OneToMany(mappedBy = "alumno")
     private List<Evaluacion> evaluaciones;
 }

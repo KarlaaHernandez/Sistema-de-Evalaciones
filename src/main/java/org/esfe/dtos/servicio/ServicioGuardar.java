@@ -8,9 +8,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class ServicioGuardar implements Serializable {
-    private String biblioteca;
-    private String cafeteria;
-    private String registroAcademico;
-    private String atencionAlCliente;
-    private Integer alumnoId;
+    private String nombre;
+
 }

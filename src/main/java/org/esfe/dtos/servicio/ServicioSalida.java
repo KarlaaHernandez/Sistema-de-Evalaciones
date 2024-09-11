@@ -9,9 +9,5 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class ServicioSalida implements Serializable {
-    private String biblioteca;
-    private String cafeteria;
-    private String registroAcademico;
-    private String atencionAlCliente;
-    private AlumnoSalida alumno;
+    private String nombre;
 }
