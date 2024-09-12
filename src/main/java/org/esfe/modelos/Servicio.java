@@ -14,16 +14,14 @@ public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String nombre;
 
 
     @ManyToOne
     @JoinColumn(name = "alumno_id")
     private Alumno alumno;
+
     @OneToMany(mappedBy = "servicio")
-    private List<Evaluacion> evaluaciones;
-
-
-    public void setId(Object o) {
-    }
+    private List<Criterio> criterios;
 }

@@ -9,5 +9,6 @@ import java.io.Serializable;
 @Getter
 @Setter
 public class ServicioSalida implements Serializable {
+    private Integer id;
     private String nombre;
 }

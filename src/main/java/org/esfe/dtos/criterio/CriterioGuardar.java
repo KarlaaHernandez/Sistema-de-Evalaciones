@@ -10,6 +10,5 @@ import java.io.Serializable;
 
 public class CriterioGuardar implements Serializable {
     private String nombre;
-
-    private Integer ServiceId;
+    private Integer ServicioId;
 }

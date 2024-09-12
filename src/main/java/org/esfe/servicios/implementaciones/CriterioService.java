@@ -1,10 +1,8 @@
 package org.esfe.servicios.implementaciones;
 
-import org.esfe.dtos.alumno.AlumnoSalida;
 import org.esfe.dtos.criterio.CriterioGuardar;
 import org.esfe.dtos.criterio.CriterioModificar;
 import org.esfe.dtos.criterio.CriterioSalida;
-import org.esfe.modelos.Alumno;
 import org.esfe.modelos.Criterio;
 import org.esfe.repositorios.ICriterioRepository;
 import org.esfe.servicios.interfaces.ICriterioService;
@@ -54,9 +52,10 @@ public class CriterioService implements ICriterioService {
 
     @Override
     public CriterioSalida crear(CriterioGuardar criterioGuardar) {
-
-        Criterio criterio = criterioRepository.save(modelMapper.map(criterioGuardar, Criterio.class));
-        return  modelMapper.map(criterio, CriterioSalida.class);
+        Criterio criterio = modelMapper.map(criterioGuardar, Criterio.class);
+        criterio.setId(null);
+        Criterio resp = criterioRepository.save(criterio);
+        return  modelMapper.map(resp, CriterioSalida.class);
     }
 
     @Override
