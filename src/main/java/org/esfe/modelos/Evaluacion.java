@@ -32,10 +32,11 @@ public class Evaluacion {
 
     @ManyToMany
     @JoinTable(
-            name = "evaluacion_criterio",
-            joinColumns = @JoinColumn(name = "evaluacion_id"),
+            name = "encuesta_criterio",
+            joinColumns = @JoinColumn(name = "encuesta_id"),
             inverseJoinColumns = @JoinColumn(name = "criterio_id")
     )
-    private Set<Criterio> criterios;
+    private List<Criterio> criterios;
+
 
 }

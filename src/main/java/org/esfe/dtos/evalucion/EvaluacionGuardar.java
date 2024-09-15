@@ -10,6 +10,7 @@ import java.util.Set;
 @Getter
 @Setter
 public class EvaluacionGuardar implements Serializable {
+    private Integer id;
     private int anio;
     private LocalDate fecha;
     private Integer alumnoId;
