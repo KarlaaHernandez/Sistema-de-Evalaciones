@@ -17,11 +17,6 @@ public class Servicio {
 
     private String nombre;
 
-
-    @ManyToOne
-    @JoinColumn(name = "alumno_id")
-    private Alumno alumno;
-
     @OneToMany(mappedBy = "servicio")
     private List<Criterio> criterios;
 }
