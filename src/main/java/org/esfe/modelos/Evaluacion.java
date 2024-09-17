@@ -31,6 +31,4 @@ public class Evaluacion {
     private Alumno alumno;
 
 
-    @OneToMany(mappedBy = "evaluaciones")
-    List<DetallesEvaluaciones> detalles;
 }
