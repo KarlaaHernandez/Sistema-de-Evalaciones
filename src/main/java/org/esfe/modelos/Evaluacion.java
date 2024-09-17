@@ -39,4 +39,7 @@ public class Evaluacion {
     private List<Criterio> criterios;
 
 
+
+
+
 }
