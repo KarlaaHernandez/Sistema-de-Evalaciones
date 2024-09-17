@@ -24,10 +24,7 @@ public class Criterio {
    private Servicio servicio;
 
     @OneToOne(mappedBy = "criterio")
-    private DetalleEvaluacion detalleEvaluacion;
-
-
-
+    private Detalle detalle;
 
 
 

@@ -13,10 +13,12 @@ public class Detalle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name ="evaluaciones_id")
     private Evaluacion evaluacion;
 
-    @OneToMany(mappedBy = "detalle")
+
+    @OneToOne
+    @JoinColumn(name = "detalle_id")
     private Criterio criterio;
 }

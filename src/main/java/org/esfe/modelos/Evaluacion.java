@@ -30,5 +30,8 @@ public class Evaluacion {
     @JoinColumn(name = "alumno_id")
     private Alumno alumno;
 
+    @OneToMany(mappedBy = "evaluacion")
+    List<Detalle> detalle;
+
 
 }
