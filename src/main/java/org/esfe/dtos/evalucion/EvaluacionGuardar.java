@@ -10,7 +10,7 @@ import java.util.Set;
 @Getter
 @Setter
 public class EvaluacionGuardar implements Serializable {
-   
+
     private int anio;
     private  int ciclo;
     private LocalDate fecha;

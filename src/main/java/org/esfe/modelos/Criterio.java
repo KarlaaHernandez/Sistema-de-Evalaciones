@@ -23,4 +23,12 @@ public class Criterio {
    @JoinColumn(name = "servicio_id")
    private Servicio servicio;
 
+    @OneToOne(mappedBy = "criterio")
+    private DetalleEvaluacion detalleEvaluacion;
+
+
+
+
+
+
 }
