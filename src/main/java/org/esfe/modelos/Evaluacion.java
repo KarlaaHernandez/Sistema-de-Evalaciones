@@ -20,23 +20,15 @@ public class Evaluacion {
 
     private int anio;
 
+    private int ciclo;
+
     private LocalDate fecha;
+
+
 
     @ManyToOne
     @JoinColumn(name = "alumno_id")
     private Alumno alumno;
-
-    @ManyToOne
-    @JoinColumn(name = "servicio_id")
-    private Servicio servicio;
-
-    @ManyToMany
-    @JoinTable(
-            name = "encuesta_criterio",
-            joinColumns = @JoinColumn(name = "encuesta_id"),
-            inverseJoinColumns = @JoinColumn(name = "criterio_id")
-    )
-    private List<Criterio> criterios;
 
 
 

@@ -10,4 +10,5 @@ import java.io.Serializable;
 public class ServicioGuardar implements Serializable {
     private String nombre;
 
+
 }

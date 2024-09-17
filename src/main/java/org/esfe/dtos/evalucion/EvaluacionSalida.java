@@ -12,8 +12,8 @@ import java.util.Set;
 public class EvaluacionSalida implements Serializable {
     private Integer id;
     private int anio;
+    private  int ciclo;
     private LocalDate fecha;
     private Integer alumnoId;
-    private Integer servicioId;
-    private Set<Integer> criteriosId;
+
 }
