@@ -19,6 +19,7 @@ public class AlumnoController {
     @Autowired
     private IAlumnoService alumnoService;
 
+
     @GetMapping
     public ResponseEntity<Page<AlumnoSalida>> mostrarTodoPaginados(Pageable pageable){
         Page<AlumnoSalida> alumnos = alumnoService.obtenerTodosPaginados(pageable);
