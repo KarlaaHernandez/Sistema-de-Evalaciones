@@ -19,6 +19,6 @@ public class Detalle {
 
 
     @OneToOne
-    @JoinColumn(name = "detalle_id")
+    @JoinColumn(name = "criterio_id")
     private Criterio criterio;
 }

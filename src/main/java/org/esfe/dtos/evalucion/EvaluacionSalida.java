@@ -2,6 +2,7 @@ package org.esfe.dtos.evalucion;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.esfe.dtos.alumno.AlumnoSalida;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -14,6 +15,6 @@ public class EvaluacionSalida implements Serializable {
     private int anio;
     private  int ciclo;
     private LocalDate fecha;
-    private Integer alumnoId;
+    private AlumnoSalida alumnoId;
 
 }
