@@ -55,6 +55,7 @@ public class EvaluacionService implements IEvaluacionService {
     @Override
     public EvaluacionSalida crear(EvaluacionGuardar evaluacionGuardar) {
         Evaluacion evaluacion = modelMapper.map(evaluacionGuardar, Evaluacion.class);
+        evaluacion.setId(null);
         return modelMapper.map(evaluacionRepository.save(evaluacion), EvaluacionSalida.class);
     }
 

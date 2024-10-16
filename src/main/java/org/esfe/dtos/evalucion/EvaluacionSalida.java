@@ -15,6 +15,6 @@ public class EvaluacionSalida implements Serializable {
     private int anio;
     private  int ciclo;
     private LocalDate fecha;
-    private AlumnoSalida alumnoId;
+    private AlumnoSalida alumno;
 
 }

@@ -11,5 +11,5 @@ import java.io.Serializable;
 public class CriterioModificar implements Serializable {
     private Integer id;
     private String nombre;
-    private Integer ServiceId;
+    private Integer ServicioId;
 }
