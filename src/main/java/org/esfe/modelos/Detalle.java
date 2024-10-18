@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -14,11 +16,11 @@ public class Detalle {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name ="evaluaciones_id")
+    @JoinColumn(name ="evaluacion_id")
     private Evaluacion evaluacion;
 
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "criterio_id")
     private Criterio criterio;
 }

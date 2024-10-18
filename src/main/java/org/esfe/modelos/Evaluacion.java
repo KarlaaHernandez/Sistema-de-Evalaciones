@@ -24,14 +24,12 @@ public class Evaluacion {
 
     private LocalDate fecha;
 
-
-
     @ManyToOne
     @JoinColumn(name = "alumno_id")
     private Alumno alumno;
 
     @OneToMany(mappedBy = "evaluacion")
-    List<Detalle> detalle;
+    List<Detalle> detalles;
 
 
 }

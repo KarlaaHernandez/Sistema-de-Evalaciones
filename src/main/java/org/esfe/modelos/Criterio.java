@@ -23,6 +23,6 @@ public class Criterio {
    @JoinColumn(name = "servicio_id")
    private Servicio servicio;
 
-    @OneToOne(mappedBy = "criterio")
-    private Detalle detalle;
+   @OneToMany(mappedBy = "criterio")
+   private List<Detalle> detalles;
 }

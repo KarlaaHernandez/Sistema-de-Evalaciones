@@ -9,6 +9,6 @@ import java.io.Serializable;
 public class DetalleGuardar implements Serializable {
 
     private Integer id;
-    private Integer evaluacionId;
+    private Integer evaluacion_Id;
     private Integer criterioId;
 }

@@ -10,6 +10,6 @@ import java.io.Serializable;
 public class DetalleModificar implements Serializable {
 
     private Integer id;
-    private Integer evaluacionId;
+    private Integer evaluacion_Id;
     private Integer criterioId;
 }

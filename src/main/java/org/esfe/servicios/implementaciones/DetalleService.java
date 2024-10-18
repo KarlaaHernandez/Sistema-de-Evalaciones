@@ -56,8 +56,16 @@ public class DetalleService implements IDetalleService {
 
     @Override
     public DetalleSalida crear(DetalleGuardar detalleGuardar) {
-        Detalle detalle = detalleRepository.save(modelMapper.map(detalleGuardar, Detalle.class));
-        return modelMapper.map(detalle, DetalleSalida.class);
+        try {
+            Detalle detalle = modelMapper.map(detalleGuardar, Detalle.class);
+            detalle.setId(null);
+            Detalle resp = detalleRepository.save(detalle);
+            return modelMapper.map(detalle, DetalleSalida.class);
+        }
+        catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return null;
     }
 
     @Override
