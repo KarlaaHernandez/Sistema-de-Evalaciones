@@ -16,9 +16,9 @@ public interface IDocenteService {
 
     DocenteSalida obtenerPorId(Integer id);
 
-    DocenteSalida crear(DocenteGuardar alumnoGuardar);
+    DocenteSalida crear(DocenteGuardar docenteGuardar);
 
-    DocenteSalida editar(DocenteModificar alumnoModificar);
+    DocenteSalida editar(DocenteModificar docenteModificar);
 
     void eliminarPorId(Integer id);
 }
