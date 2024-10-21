@@ -57,10 +57,7 @@ public class EvaluacionController {
     @PutMapping("/{id}")
     public ResponseEntity<EvaluacionSalida> editar(@PathVariable Integer id, @RequestBody EvaluacionModificar evaluacionModificar) {
         EvaluacionSalida evaluacion = evaluacionService.editar(evaluacionModificar);
-        if (evaluacion != null) {
-            return ResponseEntity.ok(evaluacion);
-        }
-        return ResponseEntity.internalServerError().build();
+        return ResponseEntity.ok(evaluacion);
     }
 
     @DeleteMapping("/{id}")
