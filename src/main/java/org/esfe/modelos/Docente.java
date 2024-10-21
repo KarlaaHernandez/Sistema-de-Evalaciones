@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -18,4 +20,7 @@ public class Docente {
     private String especialidad;
     private String email;
     private String grupo;
+
+    @OneToMany(mappedBy = "docente")
+    private List<CriterioDocente> criteriosDocente;
 }

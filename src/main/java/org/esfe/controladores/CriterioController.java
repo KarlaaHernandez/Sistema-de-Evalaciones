@@ -56,7 +56,11 @@ public class CriterioController {
     @PutMapping("/{id}")
     public ResponseEntity<CriterioSalida> editar(@PathVariable Integer id, @RequestBody CriterioModificar criterioModificar){
         CriterioSalida criterio = criterioService.editar(criterioModificar);
-        return ResponseEntity.ok(criterio);
+        if(criterio != null){
+            return ResponseEntity.ok(criterio);
+        }
+
+        return ResponseEntity.internalServerError().build();
     }
 
     @DeleteMapping("/{id}")

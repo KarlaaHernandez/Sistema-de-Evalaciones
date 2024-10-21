@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 @Service
 public class CriterioService implements ICriterioService {
 
+
     @Autowired
     private ICriterioRepository criterioRepository;
 
@@ -46,8 +47,8 @@ public class CriterioService implements ICriterioService {
 
     @Override
     public CriterioSalida obtenerPorId(Integer id) {
-
-        return modelMapper.map(criterioRepository.findById(id).get(), CriterioSalida.class);
+        Criterio criterio = criterioRepository.findById(id).get();
+        return modelMapper.map(criterio, CriterioSalida.class);
     }
 
     @Override
