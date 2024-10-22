@@ -21,4 +21,7 @@ public class Alumno {
 
     @OneToMany(mappedBy = "alumno")
     private List<Evaluacion> evaluaciones;
+
+    @OneToMany(mappedBy = "alumno")
+    private List<EvaluacionDocente> evaluaciondocente;
 }
