@@ -20,7 +20,7 @@ public class Docente {
     private String especialidad;
     private String email;
     private String grupo;
-
     @OneToMany(mappedBy = "docente")
-    private List<CriterioDocente> criteriosDocente;
+    private List<EvaluacionDocente> evaluaciondocente;
+
 }
