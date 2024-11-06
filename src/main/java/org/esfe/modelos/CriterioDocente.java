@@ -23,7 +23,7 @@ public class CriterioDocente {
     @JoinColumn(name = "docente_id")
     private Docente docente;
 
-//    @OneToMany(mappedBy = "criterioDocente")
-//    private List<Detalle> detalles;
+  @OneToMany(mappedBy = "criterioDocente")
+  private List<DetalleDocente> detalles;
 
 }

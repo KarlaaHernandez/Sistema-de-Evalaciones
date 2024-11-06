@@ -20,7 +20,7 @@ class CriterioServiceTest {
 
     @Test
     void crear() {
-        CriterioSalida salida = criterioService.crear(new CriterioGuardar("Empatia", 1));
+        CriterioSalida salida = criterioService.crear(new CriterioGuardar("Empatia", 2));
         assertNotEquals(null, salida);
     }
 

@@ -18,7 +18,6 @@ public class DetalleDocente {
     @JoinColumn(name ="evaluacionDocente_id")
     private EvaluacionDocente evaluacionDocente;
 
-
     @ManyToOne
     @JoinColumn(name = "criterioDocente_id")
     private CriterioDocente criterioDocente;
