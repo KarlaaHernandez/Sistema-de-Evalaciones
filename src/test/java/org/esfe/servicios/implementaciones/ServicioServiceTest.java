@@ -43,7 +43,7 @@ class ServicioServiceTest {
 
     @Test
     void obtenerPorId() {
-        ServicioSalida salida = servicioService.obtenerPorId(1);
+        ServicioSalida salida = servicioService.obtenerPorId(2);
         assertNotEquals(null, salida);
 
 

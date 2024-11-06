@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -29,6 +30,6 @@ public class EvaluacionDocente {
     @JoinColumn(name = "docente_id")
     private Docente docente;
 
-//    @OneToMany(mappedBy = "evaluaciondocente")
-//    List<DetalleDocente> detalles;
+    @OneToMany(mappedBy = "evaluacionDocente")
+    private List<DetalleDocente> detalles;
 }

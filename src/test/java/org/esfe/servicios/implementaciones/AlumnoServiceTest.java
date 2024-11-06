@@ -57,7 +57,7 @@ class AlumnoServiceTest {
        assertDoesNotThrow(new Executable() {
           @Override
           public void execute() throws Throwable {
-             alumnoService.eliminarPorId(2);
+             alumnoService.eliminarPorId(4);
           }
        });
     }
